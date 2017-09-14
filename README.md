@@ -91,7 +91,7 @@ class Admin::StatsController < ApplicationController
 end
 ```
 
-Now that we have our controller in a module, Rails will expect the views to match. Let's create a new directory at `/app/views/admin/stats` and move our `stats/index.html.erb` into it, so we'll wind up with `/app/views/admin/stats/index.html.erb`.
+Now that we have our controller in a module, Rails will expect the views to match. Let's create a new directory at `/app/views/admin/` and move our `stats/index.html.erb` into it, so we'll wind up with `/app/views/admin/stats/index.html.erb`.
 
 **Top-tip:** The `views` folder for a controller module (in this case `/admin`) expects a subfolder structure that matches the names of the controllers (in this case `/admin/stats`).
 
@@ -132,3 +132,5 @@ If we reload `/admin/stats`, everything still works, but we've simplified the de
 We learned how to organize our URLs by using `scope` to group them with an `/admin` prefix; how to further organize our controllers using directories and modules; and how to use `scope, module` or `namespace` in our routes.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/namespaced-routes-reading'>Namespaced Routes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/namespaced-routes-reading'>Namespaced Routes </a> on Learn.co and start learning to code for free.</p>
